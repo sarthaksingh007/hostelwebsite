@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../../c++"
+		},
+		{
+			"path": "../../codechef"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "C:/Users/Dell/Desktop/New folder/Hotel-Booking-Design/Hotel Booking"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "complete web D",
+		"files.associations": {
+			"iostream": "cpp",
+			"algorithm": "cpp",
+			"initializer_list": "cpp",
+			"ostream": "cpp"
+		},
+		"liveServer.settings.port": 5501
+	}
+}

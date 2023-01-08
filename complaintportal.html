@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Portal</title>
+    <link rel="stylesheet" href="complaintportal.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form onsubmit="sendMail(this);return false">
+            <h1>Complaint Portal</h1>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="text" id="rollNumber" placeholder="Roll no." required>
+            <input type="text" id="branch" placeholder="Your branch" required>
+            <input type="email" id="email" placeholder=" Email id" required>
+            <input type="text" id="phoneNumber" placeholder=" Phone no." required>
+            <input type="text" id="hostel" placeholder="Hostel name" required>
+            <textarea id="message" rows="4" placeholder="How can we  help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                // SecureToken:" 3ea9c077-5df6-44c4-acc8-317668fa2069",
+                Host: "smtp.elasticemail.com",
+                Username: "buddysuccess7@gmail.com",
+                Password: "37A405951C1B1126E7510101D4E14A888D29",
+                To: 'buddysuccess7@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Complaint form Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Roll Number: " + document.getElementById("rollno").value
+                    + "<br> Branch: " + document.getElementById("branch").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone no.: " + document.getElementById("phoneno.").value
+                    + "<br> Hostel name: " + document.getElementById("hostel").value
+                    + "<br> Description: " + document.getElementById("description").value
+            }).then(
+                message => alert("Message Sent Succesfully")
+            );
+        }
+    </script> -->
+
+    <script src="complaint.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("xw99c06UwUfBK26Uz");
+        })();
+    </script>
+</body>
+
+</html>

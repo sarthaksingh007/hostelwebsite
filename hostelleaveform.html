@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Form</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(hostel1.JPG);
+            background-position: cover;
+            background-size: 150%;
+            font-family: sans-serif;
+            margin-top: 20px;
+            background-repeat: no-repeat;
+        }
+
+        .regform {
+            width: 800px;
+            background-color: rgb(0, 0, 0, 6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        form {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #name {
+            width: 78%;
+            height: 50px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .firstname {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+
+        }
+
+        .date {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .dateleave {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .datearrive {
+            position: relative;
+            left: 200px;
+            top: -36px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .dateOfLeave {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 20px;
+
+        }
+
+        .dateOfArrive {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 20px;
+
+        }
+
+        .purpose {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .rollNumber {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .email {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .noOfDays {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .code {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 95px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .number {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 250px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .parentscontact {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 480px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .area-code {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 16px;
+            left: 54px;
+            top: -4px;
+        }
+
+        .phone-number {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            font-size: 16px;
+            left: -100px;
+            top: -2px;
+        }
+
+        .option {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 532px;
+            height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+            outline: none;
+            overflow: hidden;
+        }
+
+        .option option {
+            font-size: 20px;
+        }
+
+        #customer {
+            margin-left: 25px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .radio {
+            display: inline-block;
+            padding-right: 70px;
+            font-size: 25px;
+            margin-left: 25px;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .radio input {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button {
+            background-color: #3BAF9F;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+        }
+
+        button:hover {
+            background-color: #5390F5;
+        }
+
+        @media (max-width:1000px) {
+            body {
+            background-image: url(allpics/hostel1.JPG);
+            background-position: cover;
+            background-size: 800%;
+            font-family: sans-serif;
+            margin-top: 20px;
+            background-repeat: no-repeat;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regform">
+        <h1>Hostel Leave Form</h1>
+    </div>
+    <div class="main">
+        <form onsubmit="sendMail(this);return false">
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="first_name" id="Name" placeholder="Name"><br>
+
+                <!-- <input class="lastname" type="text" name="last_name">
+            <label class="lastlabel">last name</label> -->
+            </div>
+
+            <h2 class="name">Roll Number</h2>
+            <input class="rollNumber" type="text" id="rollNumber" name="rollNumber" placeholder="Roll number">
+
+            <h2 class="name">Email</h2>
+            <input class="email" type="text" id="email" name="email" placeholder="E-mail">
+
+            <h2 class="name">Branch</h2>
+            <select class="option" id="branch" name="branch">
+                <option disabled="disabled" selected="selected">Choose Option</option>
+                <option>IT</option>
+                <option>CSE</option>
+                <option>ECE</option>
+            </select>
+
+            <h2 class="name">Date</h2>
+            <input class="date" type="date" id="date" name="date" placeholder="date">
+
+            <h2 class="name">Date of leaving/arriving</h2>
+            <input class="dateleave" type="date" id="dateOfLeave" name="date" placeholder="date">
+            <label class="dateOfLeave">Date of leave</label>
+
+            <!-- <h2 class="name">Date of arriving</h2> -->
+            <input class="datearrive" type="date" id="dateOfArriving" name="date" placeholder="date">
+            <label class="dateOfArrive">Date of arriving</label>
+
+            <h2 class="name">Purpose of leave</h2>
+            <!-- <input class="purpose" type="" name="purpose" placeholder="Purpose of leave"> -->
+            <textarea name="purpose" class="purpose" id="purpose" placeholder="Purpose Of Leave"></textarea>
+
+            <h2 class="name">Number of days</h2>
+            <input class="noOfDays" id="numberOfDays" type="number" name="noOfDays" placeholder="Number of days">
+
+            <h2 class="name">Parent's Contact Number</h2>
+            <input class="parentscontact" id="parentsContact" type="text" name="parentsnumber"
+                placeholder="Parent's Contact Number">
+
+            <h2 class="name">Phone</h2>
+            <input class="code" type="text" name="area_code" id="areaCode" placeholder="Area-code">
+            <!-- <label class="area-code">Area Code</label> -->
+            <input class="number" type="text" name="phone" id="number" placeholder="Number">
+            <!-- <label class="phone-number">Phone Number</label> -->
+
+
+            <h2 id="customer">Approved from director Sir ?</h2>
+            <label class="radio">
+                <input class="radio-one" id="radio" type="radio" name="">
+                <span class="checkmark"></span>
+                Yes
+            </label>
+            <label class="radio">
+                <input class="radio-two" id="radio" type="radio" name="">
+                <span class="checkmark"></span>
+                No
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="hostelleave.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("xw99c06UwUfBK26Uz");
+        })();
+    </script>
+
+</body>
+
+</html>

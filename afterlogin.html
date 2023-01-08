@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iiitu hostel</title>
+    <link rel="stylesheet" href="afterlogin.css">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> -->
+</head>
+
+<body>
+
+    <div id="nav">
+        <!-- Nav Bar -->
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    IIITU Hostel
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" >Home</a>
+                <a href="hostelinfo.html" >Hostels</a>
+                <a href="gallery.html" >Gallery</a>
+                <a href="gallery.html" onclick="logout()" >logout</a>
+                <!-- <button class="logout" onclick="logout()">Logout</button> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="heading">
+            <h1>Welcome To IIITU Hostel!!</h1>
+            <h3>Congratulation to all of you students for great achievement to get addmission in this college.
+            </h3>
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Survey Form</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Survey for hostel mess and other things like mess food,mess staff,
+                        mess cleaning that's survey help to change in betterment,that's why we have survey facilities
+                    </p>
+                    <button type="button" class="btn" onclick="surveyBtn()">click me</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Complaint Portal</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Complaint portal for complaint against any issues of hostel,you can complain about hostel or
+                        messComplaint portal for complaint against any issues 
+                    </p>
+                    <button type="button" class="btn" onclick="complaintPortalBtn()">click me</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Hostel Registration</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Register here for hostel registration,fill form carefully because if any wrong info fill then
+                        makes some confusionbecause if any wrong info fill then
+                        makes
+                    </p>
+                    <button type="button" class="btn" onclick="registerBtn()">click me</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Leave <br> Form</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Online leave form for to give leave permission as soon as possible,that's help for students as
+                        well as warden and work simple for attendant,that's why we
+                    </p>
+                    <button type="button" class="btn" onclick="leaveFormBtn()">click me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- <h1>hello</h1> -->
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="afterlogin.js"></script>
+</body>
+
+</html>
